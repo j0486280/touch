@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.touchPanel.MainActivity" >
+	<LinearLayout 
+	     android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        android:layout_weight="1">
+	<com.example.touchpanel.SignatureView 
+	    android:id="@+id/SignatureView"
+	     android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="50dp">
+	<ImageView 
+	    android:id="@+id/imgview"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"/>  
+	</LinearLayout>
+	<TableLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+	<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+	    <Button 
+	        android:id="@+id/back_button"
+	        android:layout_width="0dip"
+        	android:layout_height="50dp"
+        	android:layout_weight="1"
+        	android:text="back"/>
+	     
+	     <Button 
+	         android:id="@+id/save_button"
+	        android:layout_width="0dip"
+        	android:layout_height="50dp"
+        	android:layout_weight="1"
+        	android:text="save"/>
+	     </TableRow>
+	</TableLayout>
+
+</LinearLayout>
